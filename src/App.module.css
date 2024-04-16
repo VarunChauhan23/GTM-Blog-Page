@@ -1,0 +1,175 @@
+.main-heading {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.top-container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0px 30px;
+}
+
+.large-card-div {
+  display: flex;
+  justify-content: end;
+  padding-right: 70px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+
+.slideFromLeft {
+  animation: slideFromLeft 1s ease forwards;
+}
+
+.slideFromBottom {
+  animation: slideFromBottom 1s ease forwards;
+}
+
+.slideFromRight {
+  animation: slideFromRight 1s ease forwards;
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 700px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .top-container, .bottom-container {
+    width: 90vw;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .large-card-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .animated-cards > * {
+    height: auto;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+  .top-container, .bottom-container {
+    width: 90vw;
+  }
+
+  .top-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+
+  .large-card-div {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .bottom-container {
+    justify-content: center;
+  }
+
+  .blog-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .animated-cards {
+    width: 100%;
+  }
+
+  .animated-cards>* {
+    width: 80% !important;
+    height: auto;
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  .top-container, .bottom-container {
+    width: 90vw;
+  }
+
+  .large-card-div {
+    padding-right: 40px;
+  }
+}

@@ -1,0 +1,115 @@
+.large-card {
+    width: 25vw;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 6px 4px 1px rgba(43, 42, 42, 0.5);
+}
+
+.search-area {
+    object-fit: contain;
+    height: 30%;
+    border-radius: 25px;
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+#search {
+    padding: 10px 5px;
+    margin: 10px 0px;
+    border: 1px solid #E2E8F0;
+}
+
+#search:focus {
+    outline: none;
+    border: 3px solid #E2E8F0;
+}
+
+#search::placeholder {
+    font-size: 10px;
+    color: #909090;
+}
+
+label[for="search"] {
+    font-size: 18px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.search-button {
+    width: 25%;
+    background-color: #F13E1E;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+}
+
+.post-link-div {
+    object-fit: contain;
+    height: 70%;
+    border-radius: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.post-heading {
+    padding-left: 15px;
+}
+
+.post-link-div p {
+    color: #1E293B;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.post-links {
+    padding: 0px 15px;
+    height: auto;
+    margin: 8px 0px;
+}
+
+.post-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #046BD2;
+}
+
+@media (max-width: 700px) {
+
+    .large-card {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .large-card {
+        width: 300px;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .large-card {
+        width: 350px;
+        padding: 0;
+    }
+}
