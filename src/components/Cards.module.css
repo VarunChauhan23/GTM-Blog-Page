@@ -1,5 +1,5 @@
 .card {
-    width: 18vw;
+    width: 20vw;
     height: 350px;
     border-radius: 25px;
     box-shadow: 0 2px 2px 1px rgba(43, 42, 42, 0.5);
@@ -43,12 +43,20 @@
         margin: 10px;
         height: auto;
     }
+
+    .link {
+        padding: 8px 10px;
+    }
+
+    .text {
+        padding: 8px 10px;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
 
     .card {
-        width: 250px;
+        width: 300px;
     }
 }
 
@@ -56,6 +64,6 @@
 @media (min-width: 900px) and (max-width: 1200px) {
 
     .card {
-        width: 20vw;
+        width: 25vw;
     }
 }
