@@ -1,15 +1,15 @@
 .large-card {
     width: 30vw;
-    height: auto;
+    height: 100vh;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 6px 4px 1px rgba(43, 42, 42, 0.5);
+    box-shadow: 4px 8px 6px 2px rgba(43, 42, 42, 0.5);
 }
 
 .search-area {
     object-fit: contain;
-    height: 30%;
+    height: auto;
     border-radius: 25px;
     padding-top: 50px;
     padding-left: 20px;
@@ -62,14 +62,25 @@ label[for="search"] {
     object-fit: contain;
     height: 70%;
     border-radius: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     margin-top: 5px;
 }
 
+.post-links-container::-webkit-scrollbar {
+    display: none;
+}
+
+.post-links-container {
+    margin-bottom: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .post-heading {
     padding-left: 15px;
+    margin: 10px 0px;
 }
 
 .post-link-div p {
@@ -80,7 +91,6 @@ label[for="search"] {
 
 .post-links {
     padding: 0px 15px;
-    height: auto;
     margin: 8px 0px;
 }
 
@@ -94,14 +104,28 @@ label[for="search"] {
 
     .large-card {
         width: 100vw;
+        height: 80vh;
+    }
+
+    .post-links-container {
+        margin-bottom: 15px;
     }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
 
     .large-card {
-        width: 300px;
+        width: 50vw;
+        height: 100vh;
         padding: 0;
+    }
+
+    .post-heading {
+        margin: 0;
+    }
+
+    .post-links-container {
+        margin-bottom: 50px;
     }
 }
 
@@ -109,7 +133,16 @@ label[for="search"] {
 @media (min-width: 901px) and (max-width: 1200px) {
 
     .large-card {
-        width: 350px;
+        width: 50vw;
+        height: 100vh;
         padding: 0;
+    }
+
+    .post-heading {
+        margin: 0;
+    }
+
+    .post-links-container {
+        margin-bottom: 50px;
     }
 }
